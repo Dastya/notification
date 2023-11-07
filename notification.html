@@ -1,30 +1,22 @@
-<style>
-    #NotiflixNotifyWrap {
-        width: 280px;
-        z-index: 4001;
-        opacity: 1;
-        inset: 120px 10px auto auto !important;
-    }
-</style>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/notiflix@2.7.0/dist/notiflix-aio-2.7.0.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://codefinity-content-media-v2.s3.eu-west-1.amazonaws.com/courses/c1087363-9025-4c37-8d5e-983a32a007e9/other-section/notification.css"
+/>
 
-<html>
-<head>
-    <script src="https://cdn.jsdelivr.net/npm/notiflix@2.7.0/dist/notiflix-aio-2.7.0.min.js"></script>
-    <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/notiflix@2.7.0/dist/notiflix-aio-2.7.0.min.css"
-    />
-    <style>
-        body {top: 100px}
-    </style>
-    <script>
-        function showCompilationWarning() {
-            Notiflix.Notify.Warning("Code compilation can be time-consuming due to the nature of Java compiler.", {
-                timeout: 6000,
-            });
-        }
-    </script>
-</head>
 <body onload="showCompilationWarning()"></body>
-</html>
 
+<script src="https://cdn.jsdelivr.net/npm/notiflix@2.7.0/dist/notiflix-aio-2.7.0.min.js"></script>
+<script>
+  function showCompilationWarning() {
+    Notiflix.Notify.Warning(
+      "Code compilation can be time-consuming due to the nature of Java compiler.",
+      {
+        timeout: 6000,
+      }
+    );
+  }
+</script>
